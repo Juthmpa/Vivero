@@ -1,53 +1,84 @@
 <!DOCTYPE html><!--Tipo de documento-->
-<html lang="en"><!--Inico e idioma-->
+<html lang="es"><!--Inico e idioma-->
+
 <head>
     <meta charset="UTF-8"><!--permite el uso de caracteres especiales-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--compatibilidad con dispositivos-->
     <title>Vivero Orgánico</title><!--Título en la pestaña del navegador-->
     <br><!--Espacio en la parte superior-->
-    <h1>"Tu vivero orgánico preferido"</h1><!--Título inicial-->
-    <hr><!--Línea de separación-->
-    <style>/*CSS*/
-        body {/*Estilo general*/
-            background-color: beige; /*Color beige en el fondo de la página*/
-        }
-
-        
-        .cabecera-derecha{/*Estilo cabecera derecha*/
-            width: 70%;/*Espacio que ocupa la cabecera derecha*/
-            background-color: rgb(108, 173, 108);/*color verde de la cabecera derecha*/
-        }
-        .cabecera-izquierda{/*Estilo cabecera izquierda*/
-            width: 30%;/*Espacio que ocupa la cabecera izquierda*/
-            background-color: rgb(89, 147, 214);/*color azul de la cabecera izquierda*/
-            margin-top: -20px;/*mover la cabecera hacia arriba*/
-            margin-left: 586px;/*mover la cabecera hacia la derecha*/
-        }
-
-       
-        .menu{/*Estilo de los enlaces en la clase menú*/
-            color: rgb(186, 128, 187);/*color rosado para los enlaces*/
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/estilos.css"><!--Enlace para acceder a archivos CSS-->
 </head>
+
 <body>
-    <!--Inicio del cuerpo de la página-->
-    <header>
-        <!--Menú de navegación-->
-        <div class="cabecera-derecha"><!--Clase que contiene la parte derecha de la cabecera-->
-            <nav><!--Contenedor del menú de navegación-->
-                <a class="menu" href="#" id="btn-menu">Menú</a>
-                <a href="#" id="btn-nosotros">Nosotros</a>
-                <a href="#" id="btn-galeria">Galería</a>
-                <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
-    
+    <!--Encabezado-->
+    <header class="encabezado">
+        <div class="contenedor-encabezado"><!--Clase que contiene encabezado-->
+            <h1>VIVERO ORGÁNICO</h1>
+            <hr>
+            <!--Contenedor del menú de navegación-->
+            <nav class="nav-principal">
+                <a href="#nosotros" id="btn-nosotros">Nosotros</a>
+                <a href="#menu" id="btn-menu">Menú</a>
+                <a href="#galeria" id="btn-galeria">Galería</a>
+                <a href="#ubicación" id="btn-ubicacion">Ubicación</a>
+                <a href="#asesoria" id="btn-asesoria">Asesoría</a>
             </nav>
+            <hr>
         </div>
-        <div class="cabecera-izquierda"><!--Clase que contiene la parte izquierda de la cabecera-->
-            <a href="#" id="btn-asesoria">Asesoría</a><!--botón en la parte izquierda-->
+        <div>
+            <h1>GreenSpace<span> Vivero Orgánico</span></h1>
+                    <h3>"Donde la tierra susurra y las plantas florecen"</h3>
         </div>
-        
     </header>
-    
+    <!--Fin del header-->
+
+    <!--Inicio sección main-->
+    <section>
+        <!--Inicio Acerca de-->
+        <section id="btn-nosotros">
+            <div>
+                <div>
+                    <img src="img/Nosotros.jpg" alt="Nosotros"><!--Accesibilidad-->
+                </div>
+                <article>
+                    <h3>Nosotros</h3>
+
+                    <p>
+                        En marzo de 2020, mientras el mundo se encerraba en silencio
+                        y las calles olían a incertidumbre y alcohol gel,
+                        la enfermera Valeria halló entre los pliegues de su uniforme
+                        una semilla de girasol reseca. En su minúsculo departamento,
+                        con manos acostumbradas a salvar vidas pero ahora temblorosas
+                        de cansancio, plantó aquella semilla en una lata de atún vacía.
+                        La regó con agua de lluvia recolectada en la tapa de un termo
+                        y confesiones susurradas al anochecer.
+                        Así nació "GreenSpace": primero como un rito contra la asfixia,
+                        luego como un bosque en miniatura que trepó por las paredes del balcón,
+                        desafió el cemento con sus zarcillos verdes y convirtió las macetas
+                        improvisadas (tazas rotas, guantes de látex rellenos de tierra,
+                        mascarillas colgantes) en poemas de resistencia biológica.
+                    </p>
+                    <p>
+                        Los vecinos comenzaron a dejar notas junto a sus puertas:
+                        "Cambio esquejes de albahaca por recetas de pan",
+                        "¿Prestas un poco de sol para mi helecho?".
+                        Valeria organizó una red clandestina de plantas viajeras
+                        que atravesaban los edificios en cestas colgantes,
+                        llevando en sus hojas mensajes cifrados de esperanza.
+                        Cuando la pandemia amainó, ese jardín colectivo se trasplantó
+                        a un local abandonado que hoy huele a tierra húmeda y milagros
+                        cotidianos. En cada maceta se entierra un fragmento de historia:
+                        semillas germinadas entre informes médicos, cactus que sobrevivieron
+                        a noches de insomnio, enredaderas que aún guardan el eco de los aplausos
+                        a las 8 PM. El vivero no vende plantas, sino memorias vivientes
+                        que enseñan cómo, incluso en los suelos más áridos, puede brotar un mundo nuevo.
+                    </p>
+                </article>
+            </div>
+
+        </section>
+    </section>
+    <!-- Fin de la sección Nosotros -->
 </body>
+
 </html>
