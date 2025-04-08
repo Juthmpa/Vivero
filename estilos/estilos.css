@@ -1,66 +1,129 @@
 /*Estilos CSS para el index.html*/
-* {
-    margin: 0;
-    padding: 0;
+* {/*Estilo general*/
+    /*Elimina el margen por defecto de todos los elementos HTML*/
+    margin:0;
+    /*Elimina el espacio que hay entre el contenido de un elemento 
+    y su borde por defecto de todos los elementos HTML*/
+    padding:0;
+    /*Definimos el modelo de cajas para navegadores basados en weebkit
+    GoogleChrome, Internet Explorer, Edge*/
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en mozilla
+    Firefox, Opera*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en el estándar*/
     box-sizing: border-box;
+    /*Definimos el color del fondo del encabezado*/
     background-color: rgb(122, 221, 133);
-}
+}/*Fin estilo general*/
 
 /*Estilos al body*/
 body {
+    /*Se define el fondo de la página*/
     background-color: beige;
+    /*Especificamos la familia de fuentes principal y alternativas*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     /*Definimos el tamaño base de fuente del sitio*/
     font-size: 15px;
-    line-height: 1.5;/* Espaciado entre líneas para mejor lectura */
-}
+    /* Espaciado entre líneas para mejor lectura */
+    line-height: 1.5;
+}/*Fin estilos del body/
+
+/*Trabajamos en los estilos de la clase contenedor*/
+.contenedor{
+    /*Definir el ancho del contenedor*/
+    width: 90%;
+    /*Definimos el color de fondo del contenedor*/
+    background-color: rgb(89, 201, 128);
+    /*Definimos el ancho máximo del contenedor*/
+    max-width: 1000px;
+    /*Definimos el margen en automático para centrar el contenedor */
+    margin: auto;
+    /*Ocultamos el desbordamiento del contenedor */
+    overflow: hidden;
+}/*Fin estilos de la clase contenedor*/
 
 /*Estilo al header*/
 header {
-    background-color: rgb(42, 110, 18);
+    /*Definimos el tama;o del header a un 100% del ancho disponible*/
+    width: 100%;
+    /*Establecemos una imagen de fondo y un color de respaldo por si no carga*/
+    background: url('../img/Fondo2-removebg-preview.png') rgb(38, 109, 45);
+    /*Hacemos que la imagen de fondo cubra todo el header sin deformarse*/
+    background-size: cover;
+    /*Fijamos la imagen al fondo de la ventana para que no se desplace al hacer scroll*/
+    background-attachment: fixed;
+    /*Centramos la imagen horizontalmente y la posicionamos en la parte superior verticalmente*/
+    background-position: center 0;
+    /* Centramos el texto*/
     text-align: center;
-    padding: 10px 0;
+    /*Marcamos el espacio del header a 10px*/
+    padding: 200px 0;
 }
-
+/*Damos estilo al nombre de la empresa*/
 header h1 {
+    /*Escojemos el color del nombre de la empresa*/
     color: rgb(168, 99, 35);
+    /*Centramos el nombre de la empresa*/
     text-align: center;
 }
-
+/*Damos estilo al eslogan*/
 header h3 {
+    /*Escojemos cursiva en el eslogan*/
     font-style: italic;
+    /*Centramos el eslogan*/
     text-align: center;
+    /*Definimos el color del eslogan*/
     color: rgb(100, 60, 20);
+    /*Definimos el tamaño del eslogan*/
     font-size: 20px;
 }
 
 nav a {
-    margin: 0 15px; /* Añadir espaciado entre enlaces */
+    /* Añadir espaciado entre enlaces */
+    margin: 0 15px;
+    /*sin decoración */
     text-decoration: none;
-    color: rgb(100, 60, 20); /* Color de los enlaces */
+    /* Definimos el color de los enlaces */
+    color: rgb(100, 60, 20);
+    /* Definimos el tamaño de la fuente de los enlaces */
     font-size: 25px;
+    /* Definimos el tipo de letra de los enlaces */
     font-weight: bold;
 }
 
 nav a:hover {
+    /* Cambiamos el color de los enlaces al pasar el mouse */
     text-decoration: underline;
+    /* Cambiamos el color de los enlaces al pasar el mouse */
     color: black;
 }
 
 section {
+    /*Definimos el espacio en la sección*/
     padding: 20px;
+    /*Definimos el margen*/
     margin: 20px auto;
+    /* Definimos la medida máxima*/
     max-width: 1000px;
 }
 
 section img {
-    width: 100%; /* La imagen tomará todo el ancho disponible */
+    /* Definimos el ancho de la imagen */
+    width: 100%; 
+    /* Definimos la altura de la imagen */
     height: auto;
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    /* Definimos el borde de la imagen */
+    margin-bottom: 20px; 
 }
 
 article p {
+    /* definimos el tipo de letra */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*Ponemos cursiva*/
     font-style: italic;
+    /*Alineamos el texto*/
     text-align: justify;
-    margin-bottom: 15px; /* Espaciado entre párrafos */
+    /* Espaciado entre párrafos */
+    margin-bottom: 15px; 
 }

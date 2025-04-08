@@ -1,5 +1,5 @@
-<!DOCTYPE html><!--Tipo de documento-->
-<html lang="es"><!--Inico e idioma-->
+<!DOCTYPE html><!--Tipo de documento HTML5-->
+<html lang="es"><!--Inicio del doc. HTML en idioma español-->
 
 <head>
     <meta charset="UTF-8"><!--permite el uso de caracteres especiales-->
@@ -9,38 +9,38 @@
     <link rel="stylesheet" href="estilos/estilos.css"><!--Enlace para acceder a archivos CSS-->
 </head>
 
-<body>
-    <!--Encabezado-->
-    <header class="encabezado">
-        <div class="contenedor-encabezado"><!--Clase que contiene encabezado-->
-            <h1>VIVERO ORGÁNICO</h1>
-            <hr>
-            <!--Contenedor del menú de navegación-->
-            <nav class="nav-principal">
-                <a href="#nosotros" id="btn-nosotros">Nosotros</a>
-                <a href="#menu" id="btn-menu">Menú</a>
-                <a href="#galeria" id="btn-galeria">Galería</a>
-                <a href="#ubicación" id="btn-ubicacion">Ubicación</a>
-                <a href="#asesoria" id="btn-asesoria">Asesoría</a>
-            </nav>
-            <hr>
-        </div>
-        <div>
-            <h1>GreenSpace<span> Vivero Orgánico</span></h1>
-                    <h3>"Donde la tierra susurra y las plantas florecen"</h3>
-        </div>
+<body><!--Inicio del contenido del cuerpo de la página-->
+    <!--Encabezado principal del sitio-->
+    <header class="encabezado"><!--Encabezado con clase personalizada-->
+        <div class="contenedor-encabezado"><!--Inicio división del encabezado-->
+            <h1>VIVERO ORGÁNICO</h1><!--Título principal del sitio-->
+            <hr><!--Línea horizontal decorativa-->
+            <!--Contenedor del menú de navegación principal-->
+            <nav class="nav-principal"><!--Inicio del menú de navegación-->
+                <a href="#nosotros" id="btn-nosotros">Nosotros</a><!--Enlace a la sección Nosotros-->
+                <a href="#plantas" id="btn-plantas">Plantas</a><!--Enlace de la sección Plantas-->
+                <a href="#galeria" id="btn-galeria">Galería</a><!--Enlace de la sección Galería-->
+                <a href="#ubicación" id="btn-ubicacion">Ubicación</a><!--Enlace de la sección Ubicación-->
+                <a href="#asesoria" id="btn-asesoria">Asesoría</a><!--Enlace de la sección Asesoría-->
+            </nav><!--Fin contenedor del menú principa-->
+            <hr><!--Línea decorativa-->
+        </div><!--Fin división encabezado-->
+        <div><!--División subtítulo y eslogan-->
+            <h1>GreenSpace<span> Vivero Orgánico</span></h1><!--Nombre de la empresa-->
+                    <h3>"Donde la tierra susurra y las plantas florecen"</h3><!--Eslogan de la empresa-->
+        </div><!--Fin de la división subtítulo y eslogan-->
     </header>
-    <!--Fin del header-->
+    <!--Fin del encabezado-->
 
-    <!--Inicio sección main-->
+    <!--Inicio sección principal-->
     <section>
-        <!--Inicio Acerca de-->
-        <section id="btn-nosotros">
-            <div>
-                <div>
-                    <img src="img/Nosotros.jpg" alt="Nosotros"><!--Accesibilidad-->
-                </div>
-                <article>
+        <!--Inicio Nosotros-->
+    <section id="btn-nosotros"><!--Sección Nosotros con id para anclaje-->
+            <div><!--Inicio división-->
+                <div><!--Inicio división imagen-->
+                    <img src="img/Nosotros.jpg" alt="Nosotros"><!--Acceso a la imagen-->
+                </div><!--Fin división imagen-->
+                <article><!--Artículo con la historia del vivero-->
                     <h3>Nosotros</h3>
 
                     <p>
@@ -73,12 +73,89 @@
                         a las 8 PM. El vivero no vende plantas, sino memorias vivientes
                         que enseñan cómo, incluso en los suelos más áridos, puede brotar un mundo nuevo.
                     </p>
-                </article>
-            </div>
+                </article><!--fin del artículo con la historia del vivero-->
+            </div><!--Fin de la división-->
 
         </section>
+        <!--Fin de la sección nosotros-->
+
+        <!--Inicio sección Plantas-->
+        <section id="plantas"><!--Clase de la sección plantas-->
+            <h2>Plantas Disponibles</h2><!--Primer título de tipos de plantas-->
+            <article><!--Contenido independiente de plantas medicinales-->
+                <h3>Medicinales</h3>
+                <p><!--Párrafo con categoría plantas medicinales-->
+                    <div>
+                        <p class="nombre">Manzanilla</p><!--Nombre-->
+                        <p class="precio">$ 3.50</p><!--precio-->
+                        <p class="descripcion">Ideal para calmar los nervios, ayuda con problema digestivos
+                            y es antiinflamatoria.</p><!--descripción-->
+                    </div>
+                    <div>
+                        <p class="nombre">Aloe Vera</p><!--Nombre-->
+                        <p class="precio">$ 2.50</p><!--precio-->
+                        <p class="descripcion">Excelente para tratar quemaduras, heridas
+                            y problemas de la piel.</p><!--descripción-->
+                    </div>
+                    <div>
+                        <p class="nombre">Lavanda</p><!--Nombre-->
+                        <p class="precio">$ 4.50</p><!--precio-->
+                        <p class="descripcion">Relajante natural, útil contra el insomnio
+                            y contra el estrés.</p><!--descripción-->
+                    </div>
+                </p>
+   
+            </article>
+            <article><!--Contenido independiente de plantas alimenticias-->
+                <h3>Alimenticias</h3>
+                <p><!--Párrafo con categoría plantas alimenticias-->
+                    <div>
+                        <p class="nombre">Albahaca</p><!--Nombre-->
+                        <p class="precio">$ 3.50</p><!--precio-->
+                        <p class="descripcion">Plata aromática para cocinar pastas, 
+                            ensaladas y pestos.</p><!--descripción-->
+                    </div>
+                    <div>
+                        <p class="nombre">Tomillo</p><!--Nombre-->
+                        <p class="precio">$ 2.50</p><!--precio-->
+                        <p class="descripcion">Excelente para condimentar carnes y 
+                            sopas.</p><!--descripción-->
+                    </div>
+                    <div>
+                        <p class="nombre">Romero</p><!--Nombre-->
+                        <p class="precio">$ 4.50</p><!--precio-->
+                        <p class="descripcion">Potente para dar sabor a muchos platos
+                            mediterráneos.</p><!--descripción-->
+                    </div>
+                </p><!--Fin párrafo plantas alimenticias-->
+            </article><!--Fin artículo plantas alimenticias-->
+
+        </section><!--Fin sección plantas-->
+        <section class="galeria" id="galeria"><!--Inicio de la sección galería-->
+            <div class="foto">
+                <img src="img/manzanilla.jpg" alt="medicinal">
+            </div>
+            <div class="foto">
+                <img src="img/aloe-vera.jpg" alt="medicinal">
+            </div>
+            <div class="foto">
+                <img src="img/lavanda.jpg" alt="medicinal">
+            </div>
+            <div class="foto">
+                <img src="img/tomillo.jpg" alt="medicinal">
+            </div>
+            <div class="foto">
+                <img src="img/romero.jpg" alt="medicinal">
+            </div>
+            <div class="foto">
+                <img src="img/albahaca.jpg" alt="medicinal">
+            </div>
+
+        </section><!--Fin de la sección galería-->
+
+
     </section>
-    <!-- Fin de la sección Nosotros -->
+    <!-- Fin de la página inicial -->
 </body>
 
 </html>
