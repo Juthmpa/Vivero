@@ -1,10 +1,11 @@
 /*Estilos CSS para el index.html*/
-* {/*Estilo general*/
+* {
+    /*Estilo general*/
     /*Elimina el margen por defecto de todos los elementos HTML*/
-    margin:0;
+    margin: 0;
     /*Elimina el espacio que hay entre el contenido de un elemento 
     y su borde por defecto de todos los elementos HTML*/
-    padding:0;
+    padding: 0;
     /*Definimos el modelo de cajas para navegadores basados en weebkit
     GoogleChrome, Internet Explorer, Edge*/
     -webkit-box-sizing: border-box;
@@ -13,9 +14,11 @@
     -moz-box-sizing: border-box;
     /*Definimos el modelo de cajas para navegadores basados en el estándar*/
     box-sizing: border-box;
-    /*Definimos el color del fondo del encabezado*/
-    background-color: rgb(122, 221, 133);
-}/*Fin estilo general*/
+    /*Definimos la letra de todos los elementos HTML*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Fin estilo general*/
 
 /*Estilos al body*/
 body {
@@ -23,107 +26,373 @@ body {
     background-color: beige;
     /*Especificamos la familia de fuentes principal y alternativas*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     /*Definimos el tamaño base de fuente del sitio*/
+    /*Definimos el tamaño base de fuente del sitio*/
     font-size: 15px;
     /* Espaciado entre líneas para mejor lectura */
     line-height: 1.5;
-}/*Fin estilos del body/
+}
 
-/*Trabajamos en los estilos de la clase contenedor*/
-.contenedor{
-    /*Definir el ancho del contenedor*/
-    width: 90%;
-    /*Definimos el color de fondo del contenedor*/
-    background-color: rgb(89, 201, 128);
-    /*Definimos el ancho máximo del contenedor*/
-    max-width: 1000px;
-    /*Definimos el margen en automático para centrar el contenedor */
-    margin: auto;
-    /*Ocultamos el desbordamiento del contenedor */
-    overflow: hidden;
-}/*Fin estilos de la clase contenedor*/
-
+/*Fin estilos del body/
 /*Estilo al header*/
-header {
-    /*Definimos el tama;o del header a un 100% del ancho disponible*/
+
+/*1. Estilo del encabezado principal fijo*/
+.encabezado {
+    /*Definimos el tamano del header a un 100% del ancho disponible*/
     width: 100%;
     /*Establecemos una imagen de fondo y un color de respaldo por si no carga*/
-    background: url('../img/Fondo2-removebg-preview.png') rgb(38, 109, 45);
-    /*Hacemos que la imagen de fondo cubra todo el header sin deformarse*/
-    background-size: cover;
+    background: rgb(179, 214, 183);
     /*Fijamos la imagen al fondo de la ventana para que no se desplace al hacer scroll*/
     background-attachment: fixed;
-    /*Centramos la imagen horizontalmente y la posicionamos en la parte superior verticalmente*/
-    background-position: center 0;
     /* Centramos el texto*/
-    text-align: center;
-    /*Marcamos el espacio del header a 10px*/
-    padding: 200px 0;
-}
-/*Damos estilo al nombre de la empresa*/
-header h1 {
-    /*Escojemos el color del nombre de la empresa*/
-    color: rgb(168, 99, 35);
-    /*Centramos el nombre de la empresa*/
-    text-align: center;
-}
-/*Damos estilo al eslogan*/
-header h3 {
-    /*Escojemos cursiva en el eslogan*/
-    font-style: italic;
-    /*Centramos el eslogan*/
-    text-align: center;
-    /*Definimos el color del eslogan*/
+    text-align: right;
+    /*Marcamos el espacio del header*/
+    padding: 20px 0;
+    /*Definimos la posición*/
+    position: fixed;
+    /*Definimos la parte superior*/
+    top: 0;
+    /*Definimos el fondo*/
+    background-color: rgb(221, 226, 221);
+    /*Definimos el color del borde*/
+    border-bottom: 2px solid rgb(100, 60, 20);
+    /*Definimos el color del texto*/
     color: rgb(100, 60, 20);
-    /*Definimos el tamaño del eslogan*/
-    font-size: 20px;
+    /*Definimos el apilamiento de elementos*/
+    z-index: 1000;
+    /*Definimos el tamaño de la fuente*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    /* Añadir espaciado entre enlaces */
-    margin: 0 15px;
-    /*sin decoración */
-    text-decoration: none;
-    /* Definimos el color de los enlaces */
-    color: rgb(100, 60, 20);
-    /* Definimos el tamaño de la fuente de los enlaces */
-    font-size: 25px;
-    /* Definimos el tipo de letra de los enlaces */
+/*Fin estilo del encabezado principal fijo*/
+
+/*Estilo del menú de navegación*/
+.nav-principal {
+    /*Definimos visualización del elemento*/
+    display: flex;
+    /*Definimos la distribución del espacio entre y alrededor*/
+    justify-content: space-between;
+    /*Definimos la alineación de los elementos*/
+    align-items: center;
+    /*Definimos el relleno*/
+    padding: 10px 20px;
+    /*Definimos para ayudar para pantallas pequeñaa*/
+    flex-wrap: wrap;
+}
+
+/*Fin estilo del menú de navegación*/
+
+/*Estilo del logo*/
+.logo {
+    /*Definimos la alineación de los elementos*/
+    display: flex;
+    /*Definimos la alineación vertical*/
+    flex-direction: column;
+    /*Definimos la alineación a la izquierda*/
+    align-items: flex-start;
+}
+
+/*Fin estilo del logo*/
+
+/*Estilo del h1 del encabezado*/
+.encabezado .nav-principal .logo h1 {
+    /*Definimos el color del texto*/
+    color: rgb(136, 84, 32);
+    /*Definimos el tamaño de la fuente*/
+    font-size: 30px;
+    /*Definimos el peso de la fuente*/
     font-weight: bold;
+    /*Definimos el relleno*/
+    padding: 0;
+    /*Definimos la decoración del texto*/
+    text-decoration: none;
+    /*Definimos el margen*/
+    margin: 0;
 }
 
-nav a:hover {
-    /* Cambiamos el color de los enlaces al pasar el mouse */
-    text-decoration: underline;
-    /* Cambiamos el color de los enlaces al pasar el mouse */
-    color: black;
+/*Fin estilo del logo*/
+
+/*Estilo de la imagen del logo*/
+.logo img {
+    /*Definimos el tamaño de la imagen*/
+    width: 250px;
+    /*Definimos el margen*/
+    margin-top: 10px;
+    /*Definimos que flote*/
+    float: left;
+    /*Definimos la alineación*/
+    display: block;
+    /*Definimos la alineación vertical*/
+    vertical-align: middle;
+
 }
 
-section {
-    /*Definimos el espacio en la sección*/
-    padding: 20px;
+/*Fin estilo del logo*/
+/*Estilo del texto del logo*/
+.encabezado .nav-principal .logo p {
+    /*Definimos el color del texto*/
+    color: rgb(100, 60, 20);
+    /*Definimos el tamaño de la fuente*/
+    font-size: 15px;
+    /*Definimos el peso de la fuente*/
+    font-weight: bold;
+    /*Definimos el relleno*/
+    padding: 0;
+    /*Definimos la decoración del texto*/
+    text-decoration: none;
+    /*Definimos el margen*/
+    margin: 0;
+}
+
+/*Fin estilo del logo*/
+
+/*Estilo del menú de navegación*/
+.menu {
+    /*Definimos la visualización del elemento*/
+    display: flex;
+    /*Definimos la alineación de los elementos*/
+    align-items: center;
+}
+
+/*Fin estilo del menú de navegación*/
+
+.menu a {
+    /*Definimos el color del texto*/
+    color: rgb(100, 60, 20);
+    /*Definimos el tamaño de la fuente*/
+    font-size: 15px;
+    /*Definimos el grosor de la fuente*/
+    font-weight: bold;
+    /*Definimos el relleno*/
+    padding: 10px 15px;
+    /*Definimos la decoración del texto*/
+    text-decoration: none;
+}
+
+/*Fin estilo del menú de navegación*/
+
+/*Estilo del menú de navegación al pasar el mouse*/
+.menu a:hover {
+    /*Definimos el color del texto*/
+    color: rgb(199, 15, 15);
+    /*Definimos el fondo*/
+    background-color: rgb(221, 226, 221);
+}
+
+/*Fin estilo del menú de navegación*/
+
+/*2. Estilo de la portada*/
+.portada {
+    /*Definimos el tamaño de la portada*/
+    width: 100%;
+    /*Definimos el fondo*/
+    background-color: rgb(221, 226, 221);
+    /*Definimos el color del borde*/
+    border-bottom: 2px solid rgb(100, 60, 20);
+    /*Definimos el relleno*/
+    padding: 50px;
+    /*Definimos la alineación de los elementos*/
+    text-align: center;
+    /*Definimos la posición de los elementos*/
+    position: relative;
+    /*Definimos el apilamiento de elementos*/
+    overflow: hidden;
+}
+/*Fin estilo de la portada*/
+
+/*Estilo del contenido de la portada*/
+.portada-contenido {
+    /*Definimos la imagen de fondo*/
+    background-image: url(../img/nosotros.jpg);
+    /*Definimos el tamaño de la imagen*/
+    background-size: cover;
+    /*Definimos la posición de la imagen*/
+    background-position: center;
+    /*Definimos que no se repita*/
+    background-repeat: no-repeat;
+    /*Definimos la alineación de los elementos*/
+    display: flex;
+    /*Definimos la dirección de los elementos*/
+    flex-direction: column;
+    /*Definimos la alineación de los elementos*/
+    align-items: center;
+    /*Definimos la justificación de los elementos*/
+    justify-content: center;
+    /*Definimos el tamaño de la portada*/
+    padding: 60px 30px;
+    /*Definimos el color del fondo*/
+    margin: 0 auto;
+    /*Definimos el borde*/
+    max-width: 1000px;
+    /*Definimos el color del fondo transparente*/
+    background-color: rgba(255, 255, 255, 0.8);
+    /*Definimos el borde*/
+    border-radius: 10px;
+    /*Definimos la sombra*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+/*Fin estilo del contenido de la portada*/
+
+/*Estilo del título de la portada*/
+.portada-contenido h1 {
+    /*Definimos el tamaño de la fuente*/
+    font-size: 50px;
+    /*Definimos el grosor de la fuente*/
+    font-weight: 300;
+    /*Definimos el color del texto*/
+    color: rgb(105, 61, 17);
+    /*Definimos el espaciado*/
+    margin-bottom: 10px;
+}/*Fin estilo del título de la portada*/
+
+/*Estilo del subtítulo de la portada*/
+.portada-contenido h1 {
+    /*Definimos el tamaño de la fuente*/
+    font-size: 30px;
+    /*Definimos el grosor de la fuente*/
+    font-weight: 300;
+    /*Definimos el color del texto*/
+    color: rgb(105, 61, 17);
+    /*Definimos el espaciado*/
+    padding: 0 20px 20px 20px;
+}/*Fin estilo del subtítulo de la portada*/
+
+/*Estilo del título del artículo de la portada*/
+.portada .portada-contenido h3 {
+    /* definimos el tamaño*/
+    font-size: 30px;
+    /*Definimos el grosor de la fuente*/
+    font-weight: 300;
+    /*Definimos el color del texto*/
+    color: rgb(105, 61, 17);
+    /*Definimos el espaciado*/
+    margin-bottom: 10px;
+}/*Fin estilos del artículo*/
+
+/*Estilo del subtítulo de la portada*/
+.portada-contenido article p {
+    /*Definimos el tamaño de la fuente*/
+    font-size: 20px;
+    /*Definimos el grosor de la fuente*/
+    font-weight: 300;
+    /*Definimos el color del texto*/
+    color: rgb(105, 61, 17);
+    /*Definimos el espaciado*/
+    padding: 0 20px 20px 20px;
+}/*Fin estilo del subtítulo de la portada*/
+
+/*Estilo del boton ver*/
+.portada-contenido .btn-productos {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(105, 61, 17);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}/*Fin estilo del subtítulo de la portada*/
+
+/*Estilo del botón ver*/
+.portada-contenido .btn-productos:hover {
+    /*Definimos el color del texto*/
+    color: rgb(199, 15, 15);
+    /*Definimos el relleno*/
+    padding: 10px 20px;
+    /*Definimos la decoración del texto*/
+    text-decoration: none;
+}/*Fin estilo del botón ver*/
+
+/*Estilo de tarjetas de productos*/
+.tarjetas {
+    /*Definimos la visualización del elemento*/
+    display: grid;
+    /*Definimos la alineación de los elementos*/
+    align-items: center;
+    /*Definimos la justificación de los elementos*/
+    justify-content: space-around;
     /*Definimos el margen*/
     margin: 20px auto;
-    /* Definimos la medida máxima*/
-    max-width: 1000px;
+    /*Definimos el relleno*/
+    padding: 20px;
 }
 
-section img {
-    /* Definimos el ancho de la imagen */
-    width: 100%; 
-    /* Definimos la altura de la imagen */
-    height: auto;
-    /* Definimos el borde de la imagen */
-    margin-bottom: 20px; 
+/*Fin estilo de tarjetas de productos*/
+
+
+/*Estilos productos*/
+.producto {
+    /*Definimos el tamaño de la tarjeta*/
+    width: 300px;
+    /*Definimos el fondo*/
+    background-color: rgb(221, 226, 221);
+    /*Definimos el borde*/
+    border: 1px solid rgb(100, 60, 20);
+    /*Definimos el relleno*/
+    padding: 20px;
+    /*Definimos la alineación de los elementos*/
+    text-align: center;
 }
 
-article p {
-    /* definimos el tipo de letra */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*Ponemos cursiva*/
-    font-style: italic;
-    /*Alineamos el texto*/
-    text-align: justify;
-    /* Espaciado entre párrafos */
-    margin-bottom: 15px; 
+/*Fin estilos productos*/
+
+/*Estilo del producto*/
+.producto:hover {
+    /*Definimos el color del borde*/
+    border-color: rgb(100, 60, 20);
+    /*Definimos la sombra*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/*Fin estilos productos*/
+
+.producto img{
+    /*Definimos el borde*/
+    border-radius: 5px;
+    /*Definimos la alineación*/
+    display: block;
+    /*Definimos la alineación vertical*/
+    vertical-align: middle;
+}
+/*Estilo del botón compra*/
+.btn-compra {
+    /*Definimos el color del texto*/
+    color: white;
+    /*Definimos el fondo*/
+    background-color: rgb(100, 60, 20);
+    /*Definimos el relleno*/
+    padding: 10px 20px;
+    /*Definimos la decoración del texto*/
+    text-decoration: none;
+    /*Definimos el borde*/
+    border-radius: 5px;
+}
+
+/*Fin estilos productos*/
+
+/*Estilo del botón compra al pasar el mouse*/
+.btn-compra:hover {
+    /*Definimos el color del texto*/
+    color: rgb(100, 60, 20);
+    /*Definimos el fondo*/
+    background-color: white;
+}
+
+/*Fin estilos productos*/
+
+
+
+
+/*Estilo del pie de página*/
+footer {
+    /*Definimos el fondo*/
+    background-color: rgb(221, 226, 221);
+    /*Definimos el color del texto*/
+    color: rgb(100, 60, 20);
+    /*Definimos el relleno*/
+    padding: 20px;
+    /*Definimos la alineación de los elementos*/
+    text-align: center;
+}
+
+/*Fin estilos del pie de página*/
