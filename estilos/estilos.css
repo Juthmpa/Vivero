@@ -16,9 +16,7 @@
     box-sizing: border-box;
     /*Definimos la letra de todos los elementos HTML*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/*Fin estilo general*/
+}/*Fin estilo general*/
 
 /*Estilos al body*/
 body {
@@ -27,43 +25,34 @@ body {
     /*Especificamos la familia de fuentes principal y alternativas*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*Definimos el tamaño base de fuente del sitio*/
-    font-size: 15px;
+    font-size: 25px;
     /* Espaciado entre líneas para mejor lectura */
     line-height: 1.5;
-}
+}/*Fin estilos del body/
 
-/*Fin estilos del body/
 /*Estilo al header*/
-
 /*1. Estilo del encabezado principal fijo*/
 .encabezado {
+    /*Definimos la posición*/
+    position: fixed;
     /*Definimos el tamano del header a un 100% del ancho disponible*/
     width: 100%;
-    /*Establecemos una imagen de fondo y un color de respaldo por si no carga*/
-    background: rgb(179, 214, 183);
-    /*Fijamos la imagen al fondo de la ventana para que no se desplace al hacer scroll*/
-    background-attachment: fixed;
+    /*Definimos la parte superior*/
+    top: 0;
+    /*Establecemos un fondo*/
+    background: rgb(255, 255, 255, 0.75);
+
     /* Centramos el texto*/
     text-align: right;
     /*Marcamos el espacio del header*/
     padding: 20px 0;
-    /*Definimos la posición*/
-    position: fixed;
-    /*Definimos la parte superior*/
-    top: 0;
-    /*Definimos el fondo*/
-    background-color: rgb(221, 226, 221);
-    /*Definimos el color del borde*/
-    border-bottom: 2px solid rgb(100, 60, 20);
-    /*Definimos el color del texto*/
-    color: rgb(100, 60, 20);
     /*Definimos el apilamiento de elementos*/
     z-index: 1000;
-    /*Definimos el tamaño de la fuente*/
+    /*Definimos el fondo con transparencia*/
+    background-color: rgb(221, 226, 221, 0.8);
+    /*Definimos sombra con transparencia*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/*Fin estilo del encabezado principal fijo*/
+}/*Fin estilo del encabezado principal fijo*/
 
 /*Estilo del menú de navegación*/
 .nav-principal {
@@ -77,9 +66,7 @@ body {
     padding: 10px 20px;
     /*Definimos para ayudar para pantallas pequeñaa*/
     flex-wrap: wrap;
-}
-
-/*Fin estilo del menú de navegación*/
+}/*Fin estilo del menú de navegación*/
 
 /*Estilo del logo*/
 .logo {
@@ -89,9 +76,7 @@ body {
     flex-direction: column;
     /*Definimos la alineación a la izquierda*/
     align-items: flex-start;
-}
-
-/*Fin estilo del logo*/
+}/*Fin estilo del logo*/
 
 /*Estilo del h1 del encabezado*/
 .encabezado .nav-principal .logo h1 {
@@ -107,9 +92,7 @@ body {
     text-decoration: none;
     /*Definimos el margen*/
     margin: 0;
-}
-
-/*Fin estilo del logo*/
+}/*Fin estilo del logo*/
 
 /*Estilo de la imagen del logo*/
 .logo img {
@@ -123,10 +106,8 @@ body {
     display: block;
     /*Definimos la alineación vertical*/
     vertical-align: middle;
+}/*Fin estilo del logo*/
 
-}
-
-/*Fin estilo del logo*/
 /*Estilo del texto del logo*/
 .encabezado .nav-principal .logo p {
     /*Definimos el color del texto*/
@@ -141,9 +122,7 @@ body {
     text-decoration: none;
     /*Definimos el margen*/
     margin: 0;
-}
-
-/*Fin estilo del logo*/
+}/*Fin estilo del logo*/
 
 /*Estilo del menú de navegación*/
 .menu {
@@ -151,24 +130,20 @@ body {
     display: flex;
     /*Definimos la alineación de los elementos*/
     align-items: center;
-}
-
-/*Fin estilo del menú de navegación*/
+}/*Fin estilo del menú de navegación*/
 
 .menu a {
     /*Definimos el color del texto*/
     color: rgb(100, 60, 20);
     /*Definimos el tamaño de la fuente*/
-    font-size: 15px;
+    font-size: 25px;
     /*Definimos el grosor de la fuente*/
     font-weight: bold;
     /*Definimos el relleno*/
     padding: 10px 15px;
     /*Definimos la decoración del texto*/
     text-decoration: none;
-}
-
-/*Fin estilo del menú de navegación*/
+}/*Fin estilo del menú de navegación*/
 
 /*Estilo del menú de navegación al pasar el mouse*/
 .menu a:hover {
@@ -176,28 +151,29 @@ body {
     color: rgb(199, 15, 15);
     /*Definimos el fondo*/
     background-color: rgb(221, 226, 221);
-}
-
-/*Fin estilo del menú de navegación*/
+}/*Fin estilo del menú de navegación*/
 
 /*2. Estilo de la portada*/
 .portada {
     /*Definimos el tamaño de la portada*/
-    width: 100%;
+    height: 100vh;
     /*Definimos el fondo*/
-    background-color: rgb(221, 226, 221);
-    /*Definimos el color del borde*/
-    border-bottom: 2px solid rgb(100, 60, 20);
-    /*Definimos el relleno*/
-    padding: 50px;
+    background: linear-gradient(beige(153, 17, 17, 0.5), rgba(255, 255, 255, 0.5));
+    /Definimos alineación de los elementos*/
+    display: flex;
+    /*Definimos alineación de los elementos*/
+    align-items: center;
+    /*Definimos la justificación de los elementos*/
+    justify-content: center;
     /*Definimos la alineación de los elementos*/
     text-align: center;
-    /*Definimos la posición de los elementos*/
-    position: relative;
-    /*Definimos el apilamiento de elementos*/
-    overflow: hidden;
-}
-/*Fin estilo de la portada*/
+    /*Definimos el color del texto*/
+    color: rgb(211, 222, 202);
+    /*Definimos el tamaño de la fuente*/
+    font-size: 25px;
+    /*Definimos el margen*/
+    margin-top: 320px;
+}/*Fin estilo de la portada*/
 
 /*Estilo del contenido de la portada*/
 .portada-contenido {
@@ -225,71 +201,57 @@ body {
     max-width: 1000px;
     /*Definimos el color del fondo transparente*/
     background-color: rgba(255, 255, 255, 0.8);
-    /*Definimos el borde*/
+    /*Definimos el borde redondeado*/
     border-radius: 10px;
     /*Definimos la sombra*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-/*Fin estilo del contenido de la portada*/
+}/*Fin estilo del contenido de la portada*/
 
 /*Estilo del título de la portada*/
-.portada-contenido h1 {
-    /*Definimos el tamaño de la fuente*/
-    font-size: 50px;
-    /*Definimos el grosor de la fuente*/
-    font-weight: 300;
-    /*Definimos el color del texto*/
-    color: rgb(105, 61, 17);
-    /*Definimos el espaciado*/
-    margin-bottom: 10px;
-}/*Fin estilo del título de la portada*/
-
-/*Estilo del subtítulo de la portada*/
-.portada-contenido h1 {
+.portada .portada-contenido h1 {
     /*Definimos el tamaño de la fuente*/
     font-size: 30px;
-    /*Definimos el grosor de la fuente*/
-    font-weight: 300;
     /*Definimos el color del texto*/
-    color: rgb(105, 61, 17);
-    /*Definimos el espaciado*/
-    padding: 0 20px 20px 20px;
-}/*Fin estilo del subtítulo de la portada*/
+    color: white;
+}/*Fin estilo del título de la portada*/
 
 /*Estilo del título del artículo de la portada*/
 .portada .portada-contenido h3 {
     /* definimos el tamaño*/
-    font-size: 30px;
-    /*Definimos el grosor de la fuente*/
-    font-weight: 300;
-    /*Definimos el color del texto*/
-    color: rgb(105, 61, 17);
-    /*Definimos el espaciado*/
-    margin-bottom: 10px;
-}/*Fin estilos del artículo*/
-
-/*Estilo del subtítulo de la portada*/
-.portada-contenido article p {
-    /*Definimos el tamaño de la fuente*/
     font-size: 20px;
     /*Definimos el grosor de la fuente*/
-    font-weight: 300;
+    font-weight: 100;
     /*Definimos el color del texto*/
-    color: rgb(105, 61, 17);
+    color: white;
+    /*Definimos el espaciado*/
+    margin-bottom: 10px;
+    /*Definimos el alineado*/
+    text-align: center;
+}/*Fin estilos del artículo*/
+
+/*Estilo de nosotros de la portada*/
+.portada-contenido article p {
+    /*Definimos el tamaño de la fuente*/
+    font-size: 15px;
+    /*Definimos el color del texto*/
+    color: white;
     /*Definimos el espaciado*/
     padding: 0 20px 20px 20px;
-}/*Fin estilo del subtítulo de la portada*/
+}/*Fin estilo de nosotros de la portada*/
 
 /*Estilo del boton ver*/
 .portada-contenido .btn-productos {
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: bold;
+    /*Definimos el color del texto*/
     color: white;
-    background-color: rgb(105, 61, 17);
-    padding: 10px 25px;
-    border-radius: 5px;
+    /*Definimos el fondo*/
+    background-color: rgb(195, 138, 80);
+    /*Definimos el relleno*/
+    padding: 10px 20px;
+    /*Definimos la decoración del texto*/
     text-decoration: none;
+    /*Definimos el borde*/  
+    border-radius: 5px;
+    /*Definimos la transición*/
     transition: background-color 0.3s ease;
 }/*Fin estilo del subtítulo de la portada*/
 
@@ -303,8 +265,31 @@ body {
     text-decoration: none;
 }/*Fin estilo del botón ver*/
 
+/* 3. Estilo de tarjetas de productos destacados*/
+.productos {
+
+    /*Definimos la dirección de los elementos*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*Definimos el espacio entre los elementos*/
+    gap: 20px;
+    /*Definimos el espaciado*/
+    padding: 0 20px;  
+}/*Fin estilo de tarjetas de productos destacados*/
+
+/*Estilo del título productos destacados*/
+.productos h2 {
+    /*Definimos el color del texto*/
+    color: rgb(100, 60, 20);
+    /*Definimos el tamaño de la fuente*/
+    font-size: 35px;
+    /*Definimos el peso de la fuente*/
+    font-weight: bold;
+    /*Definimos el espaciado*/
+    padding: 20px 0;
+}/*Fin estilo del título productos destacados*/
+
 /*Estilo de tarjetas de productos*/
-.tarjetas {
+.productos .tarjetas {
     /*Definimos la visualización del elemento*/
     display: grid;
     /*Definimos la alineación de los elementos*/
@@ -321,7 +306,7 @@ body {
 
 
 /*Estilos productos*/
-.producto {
+.productos .tarjetas .producto {
     /*Definimos el tamaño de la tarjeta*/
     width: 300px;
     /*Definimos el fondo*/
@@ -342,17 +327,15 @@ body {
     border-color: rgb(100, 60, 20);
     /*Definimos la sombra*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+}/*Fin estilos productos*/
 
-/*Fin estilos productos*/
-
-.producto img{
+.productos .tarjetas .producto img{
     /*Definimos el borde*/
     border-radius: 5px;
     /*Definimos la alineación*/
     display: block;
-    /*Definimos la alineación vertical*/
-    vertical-align: middle;
+    /*Definimos el tamaño de la imagen*/
+    width: 100%;
 }
 /*Estilo del botón compra*/
 .btn-compra {
