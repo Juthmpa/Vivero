@@ -41,18 +41,25 @@ body {
     top: 0;
     /*Establecemos un fondo*/
     background: rgb(255, 255, 255, 0.75);
-
     /* Centramos el texto*/
-    text-align: right;
+    text-align: center;
     /*Marcamos el espacio del header*/
-    padding: 20px 0;
+    padding: 2px;
     /*Definimos el apilamiento de elementos*/
     z-index: 1000;
-    /*Definimos el fondo con transparencia*/
-    background-color: rgb(221, 226, 221, 0.8);
     /*Definimos sombra con transparencia*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }/*Fin estilo del encabezado principal fijo*/
+
+/*Estilo del logo*/
+.logo {
+    /*Definimos la alineación de los elementos*/
+    display: flex;
+    /*Definimos la alineación vertical*/
+    flex-direction: column;
+    /*Definimos la alineación a la izquierda*/
+    align-items: flex-start;
+}/*Fin estilo del logo*/
 
 /*Estilo del menú de navegación*/
 .nav-principal {
@@ -68,15 +75,6 @@ body {
     flex-wrap: wrap;
 }/*Fin estilo del menú de navegación*/
 
-/*Estilo del logo*/
-.logo {
-    /*Definimos la alineación de los elementos*/
-    display: flex;
-    /*Definimos la alineación vertical*/
-    flex-direction: column;
-    /*Definimos la alineación a la izquierda*/
-    align-items: flex-start;
-}/*Fin estilo del logo*/
 
 /*Estilo del h1 del encabezado*/
 .encabezado .nav-principal .logo h1 {
@@ -91,7 +89,7 @@ body {
     /*Definimos la decoración del texto*/
     text-decoration: none;
     /*Definimos el margen*/
-    margin: 0;
+    margin: 00;
 }/*Fin estilo del logo*/
 
 /*Estilo de la imagen del logo*/

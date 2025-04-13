@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8"><!--permite el uso de caracteres especiales-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--compatibilidad con dispositivos-->
+    <meta name="author" content="Judith Piedra"> <!--Descripción del autor-->
+    <meta name="description" content="Práctica de lo aprendido aplicado a la página de un vivero"><!--Descripción del sitio-->
+    <meta name="keywords" content="vivero, plantas, flores, orgánico"><!--Palabras clave para SEO-->
     <title>Vivero Orgánico</title><!--Título en la pestaña del navegador-->
     <link rel="stylesheet" href="estilos/estilos.css"><!--Enlace para acceder a archivos CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,16 +14,17 @@
 </head>
 
 <body><!--Inicio del contenido del cuerpo de la página-->
-    <!-- 1. Encabezado principal del sitio-->
+    <!-- 1. Encabezado del sitio-->
     <header class="encabezado"><!--Encabezado con clase personalizada-->
+        <!--Logo de la empresa-->
+        <div class="logo"><!--Inicio de la división del logo-->
+            <h1>Vivero Orgánico</h1><!--Nombre de la empresa-->
+            <img src="img/Logo-1.png" alt="Logo"><!--Imagen del logo de la empresa-->
+            <p>La tierra susurra y las plantas florecen</p><!--Descripción de la empresa-->
+        </div><!--Fin de la división del logo-->
         <!--Contenedor del menú de navegación principal-->
         <nav class="nav-principal"><!--Inicio del menú de navegación-->
-            <!--Logo de la empresa-->
-            <div class="logo"><!--Inicio de la división del logo-->
-                <h1>Vivero Orgánico</h1><!--Nombre de la empresa-->
-                <img src="img/Logo-1.png" alt="Logo"><!--Imagen del logo de la empresa-->
-                <p>La tierra susurra y las plantas florecen</p><!--Descripción de la empresa-->
-            </div>
+            
 
             <!--Menú de navegación principal-->
             <div class="menu"><!--Inicio del menú de navegación-->
@@ -33,7 +37,7 @@
         </nav><!--Fin contenedor del menú principal-->
     </header><!--Fin del encabezado-->
 
-    <!-- 2. Portada-->
+    <!-- 2. Main-->
     <section class="portada"><!--Inicio de la sección portada-->
         <div class="portada-contenido"><!--División del contenido de portada-->
             <h1>Plantas y flores para tu hogar</h1><!--Descripción de la empresa-->
@@ -91,7 +95,7 @@
     
 
 
-    <!-- 4. Fin del pie de página -->
+    <!-- 3. Fin del pie de página -->
     <footer class="pie-de-pagina">
         <div class="plataformas-sociales">
             <a href="#"><i class="whatsapp-business">Whatsapp Business</i></a>
