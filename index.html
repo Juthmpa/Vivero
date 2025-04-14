@@ -1,11 +1,13 @@
 <!DOCTYPE html><!--Tipo de documento HTML5-->
 <html lang="es"><!--Inicio del doc. HTML en idioma español-->
 
+
 <head>
     <meta charset="UTF-8"><!--permite el uso de caracteres especiales-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--compatibilidad con dispositivos-->
     <meta name="author" content="Judith Piedra"> <!--Descripción del autor-->
-    <meta name="description" content="Práctica de lo aprendido aplicado a la página de un vivero"><!--Descripción del sitio-->
+    <meta name="description" content="Práctica de lo aprendido aplicado a la página de un vivero">
+    <!--Descripción del sitio-->
     <meta name="keywords" content="vivero, plantas, flores, orgánico"><!--Palabras clave para SEO-->
     <title>Vivero Orgánico</title><!--Título en la pestaña del navegador-->
     <link rel="stylesheet" href="estilos/estilos.css"><!--Enlace para acceder a archivos CSS-->
@@ -15,94 +17,192 @@
 
 <body><!--Inicio del contenido del cuerpo de la página-->
     <!-- 1. Encabezado del sitio-->
-    <header class="encabezado"><!--Encabezado con clase personalizada-->
+    <header><!--Inicio del encabezado-->
+
+        <!--Inicio de la sección del logo y menú de navegación-->
         <!--Logo de la empresa-->
-        <div class="logo"><!--Inicio de la división del logo-->
+        <section class="logo"><!--Inicio de la división del logo-->
             <h1>Vivero Orgánico</h1><!--Nombre de la empresa-->
             <img src="img/Logo-1.png" alt="Logo"><!--Imagen del logo de la empresa-->
             <p>La tierra susurra y las plantas florecen</p><!--Descripción de la empresa-->
-        </div><!--Fin de la división del logo-->
-        <!--Contenedor del menú de navegación principal-->
-        <nav class="nav-principal"><!--Inicio del menú de navegación-->
-            
+        </section><!--Fin de la división del logo-->
 
-            <!--Menú de navegación principal-->
-            <div class="menu"><!--Inicio del menú de navegación-->
-                <a href="#nosotros" id="btn-nosotros">Nosotros</a><!--Enlace a la sección Nosotros-->
-                <a href="#plantas" id="btn-plantas">Plantas</a><!--Enlace de la sección Plantas-->
-                <a href="#galeria" id="btn-galeria">Galería</a><!--Enlace de la sección Galería-->
-                <a href="#ubicación" id="btn-ubicacion">Ubicación</a><!--Enlace de la sección Ubicación-->
-                <a href="#asesoria" id="btn-asesoria">Asesoría</a><!--Enlace de la sección Asesoría-->
-            </div>
+        <!--Inicio del menú de navegación-->
+        <nav class="menu"><!--Inicio del menú de navegación-->
+            <a href="#nosotros" id="btn-nosotros">Nosotros</a><!--Enlace a la sección Nosotros-->
+            <a href="#plantas" id="btn-plantas">Plantas</a><!--Enlace de la sección Plantas-->
+            <a href="#asesoria" id="btn-asesoria">Asesoría</a><!--Enlace de la sección Asesoría-->
+            <a href="#ubicacion" id="btn-ubicacion">Ubicación</a><!--Enlace de la sección Ubicación-->
         </nav><!--Fin contenedor del menú principal-->
+        <!--Fin de la sección del logo y menú de navegación-->
+
     </header><!--Fin del encabezado-->
 
     <!-- 2. Main-->
-    <section class="portada"><!--Inicio de la sección portada-->
-        <div class="portada-contenido"><!--División del contenido de portada-->
-            <h1>Plantas y flores para tu hogar</h1><!--Descripción de la empresa-->
+    <main>
+        <!--Nosotros-->
+        <section class="portada-contenido" id="nosotros"><!--División del contenido de portada-->
+            <h2>Plantas y flores para tu hogar</h2><!--Descripción de la empresa-->
             <h3>Nosotros</h3><!--Subtítulo de la sección-->
             <article><!--Artículo con la historia del vivero-->
-                <p>
-                    En marzo de 2020, mientras el mundo se encerraba en silencio
-                    y las calles olían a incertidumbre y alcohol gel,
-                    la enfermera Valeria halló entre los pliegues de su uniforme
-                    una semilla de girasol reseca. En su minúsculo departamento,
-                    con manos acostumbradas a salvar vidas pero ahora temblorosas
-                    de cansancio, plantó aquella semilla en una lata de atún vacía.
-                    La regó con agua de lluvia recolectada en la tapa de un termo
-                    y confesiones susurradas al anochecer.
-                    Así nació "GreenSpace": primero como un rito contra la asfixia,
-                    luego como un bosque en miniatura que trepó por las paredes del balcón,
-                    desafió el cemento con sus zarcillos verdes y convirtió las macetas
-                    improvisadas (tazas rotas, guantes de látex rellenos de tierra,
-                    mascarillas colgantes) en poemas de resistencia biológica.
-                </p>
-               
+                <p>Nacimos en plena pandemia, como una forma de reconectar con la tierra y sanar a través de la
+                    naturaleza. Este vivero es fruto del amor por las plantas y el deseo de compartir esa conexión con
+                    otros.</p>
+                <p>Hoy nos dedicamos a cultivar y ofrecer una amplia variedad de plantas, brindando también asesoría
+                    personalizada para ayudarte a cuidar y entender a tus nuevas compañeras verdes.</p>
+
             </article><!--fin del artículo con la historia del vivero-->
             <a href="#productos" class="btn-productos">Ver</a>
-        </div><!--Fin de la división subtítulo y eslogan-->
-    </section><!--Fin de la sección-->
+        </section>
 
-    <!-- 3. Productos destacados-->
-    <section class="productos" id="productos"><!--Inicio de la sección productos-->
-        <h2>Productos destacados</h2><!--Título de la sección-->
-        <div class="tarjetas"><!--Inicio de la división de productos-->
-            <!--Tarjeta individual de productos-->
-            <div class="producto"><!--Inicio de la división producto 1-->
-                <img src="img/albahaca.jpg" alt="albahaca"> <!--Imagen del producto 1-->
-                <h3>Albahaca</h3>
-                <p class="precio">$ 3.50</p>
-                <a href="#" class="btn-compra">Comprar</a>
-            </div><!--Fin de la división de producto 1-->
 
-            <div class="producto"><!--Inicio de la división de cada producto-->
-                <img src="img/romero.jpg" alt="romero"> <!--Imagen del producto 2-->
-                <h3>Romero</h3>
-                <p class="precio">$ 2.50</p>
-                <a href="#" class="btn-compra">Comprar</a>
-            </div><!--Fin de la división de producto 2-->
+        <!--Plantas-->
+        <section id="plantas">
+            <h3>Nuestras Plantas</h3>
 
-            <div class="producto"><!--Inicio de la división de cada producto-->
-                <img src="img/tomillo.jpg" alt="tomillo"> <!--Imagen del producto 3-->
-                <h3>Tomillo</h3>
-                <p class="precio">$ 3.00</p>
-                <a href="#" class="btn-compra">Comprar</a>
-            </div><!--Fin de la división de producto 1-->
-        </div><!--Fin de la división de productos-->
-    
-    </section><!-- Fin de la página inicial -->
-    
+            <!-- Plantas Decorativas -->
+            <article class="categoria">
+                <h3>Plantas Decorativas</h3>
+                <div class="plantas-grid">
+                    <div class="planta">
+                        <img src="img/Monstera.jpg" alt="Monstera Deliciosa">
+                        <h4>Monstera Deliciosa</h4>
+                        <p>$12.00</p>
+                        <p>Planta tropical de gran tamaño, ideal para interiores luminosos.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="planta">
+                        <img src="img/Sansevieria.jpg" alt="Sansevieria">
+                        <h4>Sansevieria</h4>
+                        <p>$9.00</p>
+                        <p>Fácil de cuidar, purifica el aire y crece en condiciones de poca luz.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="planta">
+                        <img src="img/Pothos.jpg" alt="Pothos">
+                        <h4>Pothos</h4>
+                        <p>$7.50</p>
+                        <p>Enredadera muy resistente, perfecta para colgar en interiores.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Plantas Alimenticias -->
+            <article class="categoria">
+                <h3>Plantas Alimenticias</h3>
+                <div class="plantas-grid">
+                    <div class="planta">
+                        <img src="img/albahaca.jpg" alt="Albahaca">
+                        <h4>Albahaca</h4>
+                        <p>$4.00</p>
+                        <p>Hierba aromática ideal para cocinar, especialmente en platos italianos.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="planta">
+                        <img src="img/TomateCherry.jpg" alt="Tomate cherry">
+                        <h4>Tomate Cherry</h4>
+                        <p>$6.50</p>
+                        <p>Planta de tomates pequeños, perfecta para terrazas y balcones.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="planta">
+                        <img src="img/Menta.jpg" alt="Menta">
+                        <h4>Menta</h4>
+                        <p>$3.80</p>
+                        <p>Refrescante y aromática, ideal para infusiones y coctelería.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Plantas Medicinales -->
+            <article class="categoria">
+                <h3>Plantas Medicinales</h3>
+                <div class="plantas-grid">
+                    <div class="planta">
+                        <img src="img/AloeVera.jpg" alt="Aloe Vera">
+                        <h4>Aloe Vera</h4>
+                        <p>$8.00</p>
+                        <p>Con propiedades curativas para la piel, quemaduras y digestión.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="planta">
+                        <img src="img/romero.jpg" alt="Romero">
+                        <h4>Romero</h4>
+                        <p>$5.50</p>
+                        <p>Usado en infusiones y masajes, mejora la circulación y la memoria.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="planta">
+                        <img src="img/lavanda.jpg" alt="Lavanda">
+                        <h4>Lavanda</h4>
+                        <p>$6.80</p>
+                        <p>Calmante natural, excelente para el estrés y como ambientador.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+
+        <!--Asesoría -->
+        <section id="asesoria">
+            <h3>Asesoría</h3>
+            <div class="asesorias">
+                <article>
+                    <h4>Asesoría en casa</h4>
+                    <p>Visita personalizada para elegir y ubicar tus plantas.</p>
+                    <img src="img/Asesoria en casa.jpg" alt="Asesoria en casa">
+                </article>
+                <article>
+                    <h4>Virtual</h4>
+                    <p>Consulta por videollamada para resolver dudas sobre tus plantas.</p>
+                    <img src="img/Asesoria virtual.jpg" alt="Asesoria virtual">
+                </article>
+                <article>
+                    <h4>Diseño de espacios verdes</h4>
+                    <p>Proyectos de decoración con plantas para hogares y oficinas.</p>
+                    <img src="img/Diseño espacios verdes.jpg" alt="Diseño espacios verdes">
+                </article>
+            </div>
+            <form>
+                <label>Nombre: <input type="text" name="nombre" required /></label>
+                <label>Correo: <input type="email" name="correo" required /></label>
+                <label>Mensaje: <textarea name="mensaje" required></textarea></label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!--Ubicación -->
+        <section id="ubicacion">
+            <h3>Ubicación</h3>
+            <p>Dirección: Calle Verde 123, Ciudad Jardín</p>
+            <p>Horarios: Lunes a Viernes 9:00 - 18:00 / Sábados y Domingos 10:00 - 15:00</p>
+            <p>Teléfono: +56 9 1234 5678</p>
+        </section>
+        <section class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15959.182209966442!2d-78.48426775430912!3d-0.193562981062385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1744591836856!5m2!1ses-419!2sec"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main><!-- Fin del main -->
+
 
 
     <!-- 3. Fin del pie de página -->
-    <footer class="pie-de-pagina">
-        <div class="plataformas-sociales">
-            <a href="#"><i class="whatsapp-business">Whatsapp Business</i></a>
+    <footer>
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
         </div>
-
-
+        <p>&copy; 2025 Vivero Orgánico. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 
 </html>
